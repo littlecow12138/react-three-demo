@@ -7,9 +7,21 @@ export const MENU_LIST = [
     icon: <HomeOutlined />,
   },
   {
-    key: "demp",
+    key: "demo",
     name: "示例",
     link: '/demo',
+    icon: <HomeOutlined />,
+  },
+  {
+    key: "event-and-interactions/user-interactions",
+    name: "user interactions",
+    link: '/event-and-interactions/user-interactions',
+    icon: <HomeOutlined />,
+  },
+  {
+    key: "loading-models/gltf",
+    name: "gltf",
+    link: '/loading-models/gltf',
     icon: <HomeOutlined />,
   },
 ];
