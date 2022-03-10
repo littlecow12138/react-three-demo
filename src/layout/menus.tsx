@@ -14,13 +14,13 @@ export const MENU_LIST = [
   },
   {
     key: "event-and-interactions/user-interactions",
-    name: "user interactions",
+    name: "User Interactions",
     link: '/event-and-interactions/user-interactions',
     icon: <HomeOutlined />,
   },
   {
     key: "loading-models/gltf",
-    name: "gltf",
+    name: "GLTF Loader",
     link: '/loading-models/gltf',
     icon: <HomeOutlined />,
   },

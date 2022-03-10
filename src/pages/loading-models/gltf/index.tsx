@@ -9,7 +9,7 @@ const GLTFLoadingPage = () => {
       <Suspense fallback={null}>
         <GLTFModel />
         <OrbitControls />
-        {/* <Environment preset="sunset" background /> */}
+        <Environment preset="sunset" background />
       </Suspense>
     </Canvas>
   );

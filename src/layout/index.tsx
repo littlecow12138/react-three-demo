@@ -17,7 +17,7 @@ const LayoutPage = () => {
 
   return (
     <Layout style={{ minHeight: "100vh" }}>
-      <Layout.Sider collapsible collapsed={collapse} onCollapse={onCollapse}>
+      <Layout.Sider width={300} collapsible collapsed={collapse} onCollapse={onCollapse}>
         <Menu theme="dark" mode="inline">
           {menus &&
             menus.map((menu_item, index) => {
