@@ -68,4 +68,16 @@ export const MENU_LIST = [
       },
     ],
   },
+  {
+    key: "loading-textures",
+    name: "Texture Loaders(纹理加载器)",
+    link: "/loading-textures",
+    icon: <UploadOutlined />,
+    children: [{
+      key: "loading-textures/texture-loader",
+        name: "Texture Loader",
+        link: "/loading-textures/texture-loader",
+        icon: <CarOutlined />,
+    }]
+  }
 ];

@@ -8,6 +8,7 @@ import GLTFLoadingPage from "../pages/loading-models/gltf";
 import GLTFJSX from "../pages/loading-models/gltf-jsx";
 import LoaderPage from "../pages/loading-models/loader";
 import ObjLoaderPage from "../pages/loading-models/obj";
+import TextureLoaderPage from "../pages/loading-textures/TextureLoader";
 
 const routes: RouteObject[] = [
   {
@@ -23,38 +24,45 @@ const routes: RouteObject[] = [
         children: [
           {
             path: "/event-and-interactions/user-interactions",
-            element: <UserInteractions />
-          }
-        ]
+            element: <UserInteractions />,
+          },
+        ],
       },
       {
         path: "/loading-models",
         children: [
           {
             path: "/loading-models/gltf",
-            element: <GLTFLoadingPage />
+            element: <GLTFLoadingPage />,
           },
           {
             path: "/loading-models/gltf-jsx",
-            element: <GLTFJSX />
+            element: <GLTFJSX />,
           },
           {
             path: "/loading-models/obj",
-            element: <ObjLoaderPage />
+            element: <ObjLoaderPage />,
           },
           {
             path: "/loading-models/fbx",
-            element: <FBXLoaderPage />
+            element: <FBXLoaderPage />,
           },
           {
             path: "/loading-models/fbx-jsx",
-            element: <FBXJSX />
+            element: <FBXJSX />,
           },
           {
             path: "/loading-models/loader",
-            element: <LoaderPage />
-          }
-        ]
+            element: <LoaderPage />,
+          },
+        ],
+      },
+      {
+        path: "/loading-textures",
+        children: [{
+          path: "/loading-textures/texture-loader",
+          element: <TextureLoaderPage />,
+        },],
       },
     ],
   },
