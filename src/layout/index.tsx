@@ -17,15 +17,32 @@ const LayoutPage = () => {
 
   return (
     <Layout style={{ minHeight: "100vh" }}>
-      <Layout.Sider width={300} collapsible collapsed={collapse} onCollapse={onCollapse}>
+      <Layout.Sider
+        width={300}
+        collapsible
+        collapsed={collapse}
+        onCollapse={onCollapse}
+      >
         <Menu theme="dark" mode="inline">
           {menus &&
             menus.map((menu_item, index) => {
-              return (
-                <Menu.Item key={menu_item.key} icon={menu_item.icon}>
-                  <Link to={menu_item.link}>{menu_item.name}</Link>
-                </Menu.Item>
-              );
+              if (menu_item.children) {
+                return <Menu.SubMenu key={menu_item.key} title={menu_item.name}>
+                  {menu_item.children.map((item) => {
+                    return (
+                      <Menu.Item key={item.key} icon={item.icon}>
+                        <Link to={item.link}>{item.name}</Link>
+                      </Menu.Item>
+                    );
+                  })}
+                </Menu.SubMenu>;
+              } else {
+                return (
+                  <Menu.Item key={menu_item.key} icon={menu_item.icon}>
+                    <Link to={menu_item.link}>{menu_item.name}</Link>
+                  </Menu.Item>
+                );
+              }
             })}
         </Menu>
       </Layout.Sider>

@@ -3,6 +3,8 @@ import Layout from "../layout";
 import Demo from "../pages/demo";
 import UserInteractions from "../pages/events-and-interactions/user-interaction";
 import GLTFLoadingPage from "../pages/loading-models/gltf";
+import GLTFJSX from "../pages/loading-models/gltf-jsx";
+import ObjLoaderPage from "../pages/loading-models/obj";
 
 const routes: RouteObject[] = [
   {
@@ -28,6 +30,14 @@ const routes: RouteObject[] = [
           {
             path: "/loading-models/gltf",
             element: <GLTFLoadingPage />
+          },
+          {
+            path: "/loading-models/gltf-jsx",
+            element: <GLTFJSX />
+          },
+          {
+            path: "/loading-models/obj",
+            element: <ObjLoaderPage />
           }
         ]
       },
