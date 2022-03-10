@@ -27,7 +27,7 @@ const LayoutPage = () => {
           {menus &&
             menus.map((menu_item, index) => {
               if (menu_item.children) {
-                return <Menu.SubMenu key={menu_item.key} title={menu_item.name}>
+                return <Menu.SubMenu key={menu_item.key} title={menu_item.name} icon={menu_item.icon}>
                   {menu_item.children.map((item) => {
                     return (
                       <Menu.Item key={item.key} icon={item.icon}>

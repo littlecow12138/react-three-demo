@@ -2,8 +2,11 @@ import type { RouteObject } from "react-router-dom";
 import Layout from "../layout";
 import Demo from "../pages/demo";
 import UserInteractions from "../pages/events-and-interactions/user-interaction";
+import FBXLoaderPage from "../pages/loading-models/fbx";
+import FBXJSX from "../pages/loading-models/fbx-jsx";
 import GLTFLoadingPage from "../pages/loading-models/gltf";
 import GLTFJSX from "../pages/loading-models/gltf-jsx";
+import LoaderPage from "../pages/loading-models/loader";
 import ObjLoaderPage from "../pages/loading-models/obj";
 
 const routes: RouteObject[] = [
@@ -38,6 +41,18 @@ const routes: RouteObject[] = [
           {
             path: "/loading-models/obj",
             element: <ObjLoaderPage />
+          },
+          {
+            path: "/loading-models/fbx",
+            element: <FBXLoaderPage />
+          },
+          {
+            path: "/loading-models/fbx-jsx",
+            element: <FBXJSX />
+          },
+          {
+            path: "/loading-models/loader",
+            element: <LoaderPage />
           }
         ]
       },
