@@ -3,7 +3,7 @@ import {
   PlayCircleOutlined,
   HighlightOutlined,
   UploadOutlined,
-  CarOutlined
+  CarOutlined,
 } from "@ant-design/icons";
 export const MENU_LIST = [
   {
@@ -73,11 +73,39 @@ export const MENU_LIST = [
     name: "Texture Loaders(纹理加载器)",
     link: "/loading-textures",
     icon: <UploadOutlined />,
-    children: [{
-      key: "loading-textures/texture-loader",
+    children: [
+      {
+        key: "loading-textures/texture-loader",
         name: "Texture Loader",
         link: "/loading-textures/texture-loader",
         icon: <CarOutlined />,
-    }]
-  }
+      },
+      {
+        key: "loading-textures/texture-jsx",
+        name: "Texture JSX (useTexture)",
+        link: "/loading-textures/texture-jsx",
+        icon: <CarOutlined />,
+      },
+    ],
+  },
+  {
+    key: "animations",
+    name: "Basic Animations(基础动画)",
+    link: "/animations",
+    icon: <UploadOutlined />,
+    children: [
+      {
+        key: "animations/animation-jsx",
+        name: "Animation JSX (useFrame)",
+        link: "/animations/animation-jsx",
+        icon: <CarOutlined />,
+      },
+      {
+        key: "animations/animation-with-ref",
+        name: "Animatiing with Refs",
+        link: "/animations/animation-with-ref",
+        icon: <CarOutlined />,
+      },
+    ],
+  },
 ];
