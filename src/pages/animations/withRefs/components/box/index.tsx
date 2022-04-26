@@ -3,6 +3,7 @@ import { useRef } from "react";
 
 const MyAnimatedBox = () => {
   const myMesh = useRef<THREE.Mesh>(null!);
+
   useFrame(({ clock }) => {
     myMesh.current.rotation.x = Math.sin(clock.getElapsedTime());
   });

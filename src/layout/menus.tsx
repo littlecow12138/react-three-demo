@@ -108,4 +108,36 @@ export const MENU_LIST = [
       },
     ],
   },
+  {
+    key: "animations/animation-react-spring",
+    name: "React Spring",
+    link: "/animations/animation-react-spring",
+    icon: <CarOutlined />,
+  },
+  {
+    key: "level/first",
+    name: "Level 1 Demo",
+    link: "/level/first",
+    icon: <CarOutlined />,
+  },
+  {
+    key: "postprocessing",
+    name: "Postprocessing(后期处理效果)",
+    link: "/postprocessing",
+    icon: <CarOutlined />,
+    children: [
+      {
+        key: "postprocessing/demo",
+        name: "Demo",
+        link: "/postprocessing/demo",
+        icon: <CarOutlined />,
+      }
+    ]
+  },
+  {
+    key: "elevator-walkthrough",
+    name: "Elevator Demo",
+    link: "/elevator-walkthrough",
+    icon: <CarOutlined />,
+  },
 ];
